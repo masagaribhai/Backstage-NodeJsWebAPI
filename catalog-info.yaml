@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "NodeJs-API"
+  description: "This is the sample Node Js App."
+  tags: 
+    - nodejs
+    - api
+  links:
+    - url: https://github.com/masagaribhai/Backstage-NodeJsWebAPI
+      title: Github
+      icon: github
+  annotations:
+    grafana/tag-selector: "my-grafana-tag"
+    jira/project-key: "BJI"
+    backstage.io/techdocs-ref: dir:.
+    
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
+  providesApis:
+    - todo
